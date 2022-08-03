@@ -1,1 +1,18 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { padding:0; margin:0; height:100%;}
+.footer {
+    
+    bottom:0;
+    position:relative;
+    width: 100%;
+    background-color: rgba(6, 97, 134, 0.588);
+    color: white;
+    text-align: center;
+    font-family: 'Montserrat';
+    height: 25px;
+ }
+ 
+
+ 
+ 

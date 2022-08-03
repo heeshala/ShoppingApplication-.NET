@@ -1,0 +1,11 @@
+div{
+    padding-top: 2vh;
+}
+
+button{
+    margin-top: 2vh;
+}
+
+div.container {
+    min-height: calc(100vh - 125px);
+}

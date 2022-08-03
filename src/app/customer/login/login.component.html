@@ -1,0 +1,31 @@
+<div class="container" style="margin-top: 2vh;font-family: Montserrat;">
+    <h1 style="text-align: center;">Login</h1>
+    <div style="width:30vw;margin-left:30%;">
+        <form (ngSubmit)="login()" [formGroup]="requiredForm" novalidate >
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" [(ngModel)]="email" formControlName="email" aria-describedby="emailHelp" placeholder="Enter email">
+              <div *ngIf="requiredForm.controls['email'].invalid && (requiredForm.controls['email'].dirty || requiredForm.controls['email'].touched)" style="color: red">
+                <div *ngIf="requiredForm.controls['email'].errors">
+                Email is required.
+              </div>
+            </div>
+        </div>
+            <br>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" required id="inputPassword" placeholder="Password" [(ngModel)]="password" formControlName="password">
+    <div *ngIf="requiredForm.controls['password'].invalid && (requiredForm.controls['password'].dirty || requiredForm.controls['password'].touched)" style="color: red">
+      <div *ngIf="requiredForm.controls['password'].errors">
+      Password is required.
+    </div>
+  </div>
+        </div>
+           <br>
+            <button type="submit" class="btn btn-success" [disabled]="requiredForm.invalid">Login</button>
+        </form>
+          <small>New Customer ? <a  href="registration">Register Now</a></small>
+    </div>
+    
+</div>
+

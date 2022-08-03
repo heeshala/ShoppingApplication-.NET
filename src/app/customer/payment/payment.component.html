@@ -1,0 +1,241 @@
+<div class="container" style="margin-top: 2vh;font-family: Montserrat;">
+  <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form (ngSubmit)="pay()" [formGroup]="requiredForm" novalidate>
+          <div class="row">
+            <div class="col-50">
+              <h3>Shipping Address</h3>
+
+              <label for="adr"
+                ><i class="fa fa-address-card-o"></i> Address</label
+              >
+              <input
+                type="text"
+                id="adr"
+                name="address"
+                [(ngModel)]="address"
+                formControlName="address"
+                placeholder="542 W. 15th Street"
+              />
+              <div
+                *ngIf="
+                  requiredForm.controls['address'].invalid &&
+                  (requiredForm.controls['address'].dirty ||
+                    requiredForm.controls['address'].touched)
+                "
+                style="color: red"
+              >
+                <div *ngIf="requiredForm.controls['address'].errors">
+                  Address is required.
+                </div>
+              </div>
+              <label for="city"><i class="fa fa-institution"></i> City</label>
+              <input
+                type="text"
+                id="city"
+                name="city"
+                [(ngModel)]="city"
+                formControlName="city"
+                placeholder="Colombo"
+              />
+              <div
+                *ngIf="
+                  requiredForm.controls['city'].invalid &&
+                  (requiredForm.controls['city'].dirty ||
+                    requiredForm.controls['city'].touched)
+                "
+                style="color: red"
+              >
+                <div *ngIf="requiredForm.controls['city'].errors">
+                  City is required.
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-50">
+                  <label for="zip">Zip</label>
+                  <input
+                    type="text"
+                    id="zip"
+                    name="zip"
+                    placeholder="10001"
+                    [(ngModel)]="zip"
+                    formControlName="zip"
+                  />
+                  <div
+                    *ngIf="
+                      requiredForm.controls['zip'].invalid &&
+                      (requiredForm.controls['zip'].dirty ||
+                        requiredForm.controls['zip'].touched)
+                    "
+                    style="color: red"
+                  >
+                    <div *ngIf="requiredForm.controls['zip'].errors">
+                      Zip is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50"></div>
+              </div>
+            </div>
+
+            <div class="col-50">
+              <h3>Payment</h3>
+
+              <label for="cname">Name on Card</label>
+              <input
+                type="text"
+                id="cname"
+                name="cardname"
+                [(ngModel)]="cardname"
+                formControlName="cardname"
+                placeholder="John More Doe"
+              />
+              <div
+                *ngIf="
+                  requiredForm.controls['cardname'].invalid &&
+                  (requiredForm.controls['cardname'].dirty ||
+                    requiredForm.controls['cardname'].touched)
+                "
+                style="color: red"
+              >
+                <div *ngIf="requiredForm.controls['cardname'].errors">
+                  Name on Card is required.
+                </div>
+              </div>
+              <label for="ccnum">Credit card number</label>
+              <input
+                type="text"
+                id="ccnum"
+                name="cardnumber"
+                [(ngModel)]="cardnumber"
+                formControlName="cardnumber"
+                placeholder="1111 2222 3333 4444"
+              />
+              <div
+                *ngIf="
+                  requiredForm.controls['cardnumber'].invalid &&
+                  (requiredForm.controls['cardnumber'].dirty ||
+                    requiredForm.controls['cardnumber'].touched)
+                "
+                style="color: red"
+              >
+                <div *ngIf="requiredForm.controls['cardnumber'].errors">
+                  Card Number is required.
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-50">
+                  <label for="expmonth">Exp Month</label>
+                  <input
+                    type="text"
+                    id="expmonth"
+                    [(ngModel)]="month"
+                    formControlName="month"
+                    name="expmonth"
+                    placeholder="09"
+                  />
+                  <div
+                    *ngIf="
+                      requiredForm.controls['month'].invalid &&
+                      (requiredForm.controls['month'].dirty ||
+                        requiredForm.controls['month'].touched)
+                    "
+                    style="color: red"
+                  >
+                    <div *ngIf="requiredForm.controls['month'].errors">
+                      Expire month is required.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-50">
+                  <label for="expyear">Exp Year</label>
+                  <input
+                    type="text"
+                    id="expyear"
+                    [(ngModel)]="year"
+                    formControlName="year"
+                    name="expyear"
+                    placeholder="2025"
+                  />
+                  <div
+                    *ngIf="
+                      requiredForm.controls['year'].invalid &&
+                      (requiredForm.controls['year'].dirty ||
+                        requiredForm.controls['year'].touched)
+                    "
+                    style="color: red"
+                  >
+                    <div *ngIf="requiredForm.controls['year'].errors">
+                      Expire year is required.
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <label for="cvv">CVV</label>
+              <input
+                type="text"
+                id="cvv"
+                [(ngModel)]="cvv"
+                formControlName="cvv"
+                name="cvv"
+                placeholder="352"
+              />
+              <div
+                *ngIf="
+                  requiredForm.controls['cvv'].invalid &&
+                  (requiredForm.controls['cvv'].dirty ||
+                    requiredForm.controls['cvv'].touched)
+                "
+                style="color: red"
+              >
+                <div *ngIf="requiredForm.controls['cvv'].errors">
+                  CVV is required.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <input
+            type="submit"
+            value="Continue to checkout"
+            [disabled]="requiredForm.invalid"
+            class="btn"
+          />
+        </form>
+      </div>
+    </div>
+
+    <div class="col-25">
+      <div class="container">
+        <h4>
+          Cart
+          <span class="price" style="color: black">
+            <i class="fa fa-shopping-cart"></i>
+            <sup><b>{{ CartItems.length }}</b></sup>
+          </span>
+        </h4>
+        <div *ngFor="let dataItem of CartItems">
+          <div class="row">
+            <p>
+              {{ dataItem.ProductName }}
+              <span class="price"
+                >Rs.{{ dataItem.UnitPrice * dataItem.Quantity | number }}</span
+              >
+            </p>
+          </div>
+        </div>
+
+        <hr />
+        <p>
+          Total
+          <span class="price" style="color: black"
+            ><b>Rs.{{ totalPrice | number }}</b></span
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

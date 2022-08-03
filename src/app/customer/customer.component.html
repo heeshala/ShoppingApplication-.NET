@@ -1,0 +1,83 @@
+  <!-- UpdatePassword -->
+  <div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="updateModalLabel">Change Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            
+            <form (ngSubmit)="updatePassword()" [formGroup]="requiredForm" novalidate>
+                <div>
+                  <label>New Password</label>
+                  <input type="password" class="form-control" [(ngModel)]="password" formControlName="password">
+                  <div *ngIf="requiredForm.controls['password'].invalid && (requiredForm.controls['password'].dirty || requiredForm.controls['password'].touched)" style="color: red">
+                    <div *ngIf="requiredForm.controls['password'].errors">
+                    Password is required.
+                  </div>
+                </div>
+                  <br>
+                  <label>Confirm Password</label>
+                  <input type="password" class="form-control" [(ngModel)]="confirm" formControlName="confirm">
+                  <div *ngIf="requiredForm.controls['confirm'].invalid && (requiredForm.controls['confirm'].dirty || requiredForm.controls['confirm'].touched)" style="color: red">
+                    <div *ngIf="requiredForm.controls['confirm'].errors">
+                    Confirm Password is required.
+                  </div>
+                </div>
+                  <br>
+                  <div style="position:center;">
+                    <button class="btn btn-success" [disabled]="requiredForm.invalid"> Change Password</button>
+                  </div>
+              </div>
+            </form>
+            
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+<div class="container" style="margin-top: 2vh;font-family: Montserrat;" >
+    <h2 style="text-align: center;">Customer Profile</h2>
+    <br>
+    <div class="row">
+      <div class="col-8" *ngFor="let dataItem of personalInfo">
+       <div>
+        <h6>Name</h6>
+        <h5>{{dataItem.Name}}</h5>
+       </div>
+       <br>
+       <div>
+        <h6>Address</h6>
+        <h5>{{dataItem.Address}}</h5>
+       </div>
+       <br>
+       <div>
+        <h6>Email</h6>
+        <h5>{{dataItem.Email}}</h5>
+       </div>
+       <br>
+       <div>
+        <h6>Contact</h6>
+        <h5>{{dataItem.Contact}}</h5>
+       </div>
+      </div>
+      <div class="col-4">
+        <div class="row" style="float:right">
+          <button class="btn btn-danger" style="float: right;" (click)="logout()"><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</button>
+        </div>
+        <br>
+        <br>
+        <div class="row" style="margin-top: 60%;float:right">
+          <button class="btn btn-success" style="float: right;" (click)="clearfields()"  data-bs-toggle="modal" data-bs-target="#updateModal"><i class="fa-solid fa-lock"></i> Change Password</button>
+        </div>
+       
+
+       
+    </div>
+    </div>
+
+    <br>
+</div>

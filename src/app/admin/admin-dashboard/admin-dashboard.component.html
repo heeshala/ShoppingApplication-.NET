@@ -1,0 +1,168 @@
+<!-- New Product -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">New Product Registration</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <h3 style="text-align:center ;">Add New Product</h3>
+            <br>
+            <form (ngSubmit)="addProduct()" [formGroup]="requiredForm" novalidate>
+                <label>Product Name</label>
+                <input type="text" class="form-control" formControlName="productname" required id="productname" placeholder="Product Name" [(ngModel)]="productname">
+                <div *ngIf="requiredForm.controls['productname'].invalid && (requiredForm.controls['productname'].dirty || requiredForm.controls['productname'].touched)" style="color: red">
+                  <div *ngIf="requiredForm.controls['productname'].errors">
+                  Product Name is required.
+                </div>
+              </div>
+                <br>
+                <label>Quantity</label>
+                <input type="number" class="form-control" formControlName="quantity" required id="quantity" placeholder="12" [(ngModel)]="quantity">
+                <div *ngIf="requiredForm.controls['quantity'].invalid && (requiredForm.controls['quantity'].dirty || requiredForm.controls['quantity'].touched)" style="color: red">
+                  <div *ngIf="requiredForm.controls['quantity'].errors">
+                  Quantity is required.
+                </div>
+              </div>
+                <br>
+                <label>Category</label>
+                <input type="text" class="form-control" formControlName="category" required id="category" placeholder="Phone" [(ngModel)]="category">
+                <div *ngIf="requiredForm.controls['category'].invalid && (requiredForm.controls['category'].dirty || requiredForm.controls['category'].touched)" style="color: red">
+                  <div *ngIf="requiredForm.controls['category'].errors">
+                  Category is required.
+                </div>
+              </div>
+                <br>
+                <label>Description</label>
+                <input type="text" class="form-control" formControlName="description" required id="description" placeholder="20h battery capacity" [(ngModel)]="description">
+                <div *ngIf="requiredForm.controls['description'].invalid && (requiredForm.controls['description'].dirty || requiredForm.controls['description'].touched)" style="color: red">
+                  <div *ngIf="requiredForm.controls['description'].errors">
+                    Description is required.
+                </div>
+              </div>
+                <br>
+                <label>Select Product Image</label>
+                <input type="file" class="form-control" accept="image/jpeg"  formControlName="selectedFiles" required id="selectedFiles" (change)="selectFile($event)" [(ngModel)]="selectedFiles">
+                <div *ngIf="requiredForm.controls['selectedFiles'].invalid && (requiredForm.controls['selectedFiles'].dirty || requiredForm.controls['selectedFiles'].touched)" style="color: red">
+                  <div *ngIf="requiredForm.controls['selectedFiles'].errors">
+                  Image is required.
+                </div>
+              </div>
+              <br>
+                <label>Price (Rs.)</label>
+                <input type="text" class="form-control" formControlName="price" required id="price" placeholder="1800" [(ngModel)]="price">
+                <div *ngIf="requiredForm.controls['price'].invalid && (requiredForm.controls['price'].dirty || requiredForm.controls['price'].touched)" style="color: red">
+                  <div *ngIf="requiredForm.controls['price'].errors">
+                  Price is required.
+                </div>
+              </div>
+                <br>
+                <label>Seller</label><br>
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    {{sellerName}}
+                  </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <div *ngFor="let seller of sellers">
+                    <li><a class="dropdown-item" (click)="setSeller(seller.SellerId,seller.SellerName)">{{seller.SellerName}}</a></li>
+                  </div>
+                </ul>
+                
+                <br>
+                <button class="btn btn-success"  [disabled]="requiredForm.invalid" style="float: right;">Add Product</button>
+            </form>
+            
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <!-- UpdateProduct -->
+<div class="modal fade" id="updateModal" tabindex="-1" aria-labelledby="updateModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="updateModalLabel">Update Product Quantity</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          
+          <form novalidate>
+              <div *ngFor="let prodInfo of productById" style="text-align: center;">
+                <h3 style="text-align: center;">{{prodInfo.ProductName}}</h3>
+                <br>
+                <img class="card-img-top" src="{{prodInfo.Image}}" height="250px">
+                <br>
+                <div style="text-align: center">
+                  <button class="btn btn-outline-dark" style="border-radius: 20;" (click)="decrement()">-</button> <span style="font-size: 25px;"> {{CurrentQuantity}} </span> <button class="btn btn-outline-dark" (click)="increment()">+</button>                      
+               </div>
+              
+              <div class="row">
+               <div class="col-6">
+                <button class="btn btn-danger"  (click)="updateStocks(prodInfo.ProductId,0)"  style="float: left;">Set Out Of Stock</button>
+               </div>
+
+               <div class="col-6">
+                <button class="btn btn-success" (click)="updateStocks(prodInfo.ProductId,CurrentQuantity)"  style="float: right;">Update Quantity</button>
+              </div>
+              </div>
+            </div>
+          </form>
+          
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+<div class="container" style="margin-top: 2vh;font-family: Montserrat;">
+    
+   <h1 style="text-align: center;">Welcome to the Repostory Management</h1>
+   <br>
+   <div>
+    <button class="btn btn-danger" (click)="logout()" style="float: right;">Logout</button>
+   </div>
+   <br>
+   <div>
+    <button class="btn btn-success"  data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fa-solid fa-plus"></i> Add Product</button>
+   </div>
+   <br>
+   <div>
+    <h5>
+      Registered  Products
+    </h5>
+   </div>
+   <br>
+   <div>
+    <table class="table table-bordered table-striped table-hover"  datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" >
+        <thead >
+        <tr >
+            <th style="text-align: center;">Product</th>
+            <th style="text-align: center;">Category</th>
+            <th style="text-align: center;">Quantity</th>
+            <th style="text-align: center;"> Price (Rs.)</th>
+            <th style="text-align: center;">Seller</th>
+            <th style="text-align: center;">Update</th>
+            
+        </tr>
+        </thead>
+        <tbody>
+        <tr *ngFor="let prod of products" style="text-align: center;">
+            <td>{{prod.ProductName}}</td>
+            <td>{{prod.Category}}</td>
+            <td>{{prod.Quantity}}</td>
+            <td>{{prod.Price | number}}</td>
+            <td><a href="tel:{{prod.SellerContact}}">{{prod.SellerName}}</a></td>
+            <td><button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#updateModal" (click)="getEditInfo(prod.ProductId)">Update Product</button></td>
+            
+        </tr>
+        </tbody>
+    </table>
+</div>
+</div>

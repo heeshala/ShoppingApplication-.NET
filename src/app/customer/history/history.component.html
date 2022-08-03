@@ -1,0 +1,83 @@
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Invoice</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <span>Order Date <b>{{dateofPurchase}}</b></span>
+            <br>
+            <table id="infotable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Unit Price (Rs.)</th>
+                        <th>Price (Rs.)</th>
+                    </tr>
+                </thead>
+                <tbody> 
+                   <tr *ngFor="let dataItem of BillInfo">
+                    <td >{{dataItem.Product}}</td>
+                    <td>{{dataItem.Quantity}}</td>
+
+                    <td>{{dataItem.Price| number}}</td>
+                    <td>{{dataItem.Price*dataItem.Quantity| number}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <span style="float: right;"><b>Total Paid Rs.{{totalBill| number}}</b></span>
+            <br>
+            <span>Deliver To</span>
+            <br>
+            <span>{{address}}</span><br>
+            <span>{{city}}</span><br>
+            <span>{{zip}}</span><br>
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+
+<div class="container" style="margin-top: 2vh;font-family: Montserrat;">
+  <h1 style="text-align: center;">Order History</h1>
+  <br>
+    <div *ngIf='HistoryList.length > 0'>
+    <table class="table table-bordered table-striped table-hover" datatable [dtOptions]="dtOptions"  >
+        <thead>
+            <tr>
+                <th style="text-align: center;">Order Id</th>
+                <th style="text-align: center;">Items Count</th>
+                <th style="text-align: center;">Purchase Date</th>
+                <th style="text-align: center;">Paid Amount (Rs.)</th>
+                <th style="text-align: center;">View Bill</th>
+            </tr>
+        </thead>
+        <tbody> 
+           <tr *ngFor="let dataItem of HistoryList" style="text-align: center;">
+            <td >{{dataItem.OrderId}}</td>
+            <td>{{dataItem.ItemsCount}}</td>
+            <td>{{dataItem.DateOfPurchase}}</td>
+            <td>{{dataItem.PaidAmount| number}}</td>
+            <td><button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="viewbill(dataItem.OrderId)">View Bill</button></td>
+           </tr>
+        </tbody>
+    </table>
+    </div>
+
+    <!--No Items in Cart-->
+    <div *ngIf='HistoryList.length == 0'>
+        <h2 style="text-align: center;margin-top:30vh">No Previous Purchases Available</h2>
+    </div>
+  </div>
+
+
+  
+
+  

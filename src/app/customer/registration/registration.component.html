@@ -1,0 +1,62 @@
+<div class="container">
+<form (ngSubmit)="register()"  [formGroup]="requiredForm" novalidate >
+  <div class="row">
+    <div class="form-group col-md-6">
+      <label for="inputName">Name</label>
+      <input type="email" class="form-control" formControlName="name" required id="inputName" placeholder="Name" [(ngModel)]="name" >
+      <div *ngIf="requiredForm.controls['name'].invalid && (requiredForm.controls['name'].dirty || requiredForm.controls['name'].touched)" style="color: red">
+        <div *ngIf="requiredForm.controls['name'].errors">
+        Name is required.
+      </div>
+    </div>
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputEmail">Email</label>
+      <input type="text" class="form-control" required id="inputEmail" placeholder="Email" [(ngModel)]="email" formControlName="email">
+      <div *ngIf="requiredForm.controls['email'].invalid && (requiredForm.controls['email'].dirty || requiredForm.controls['email'].touched)" style="color: red">
+        <div *ngIf="requiredForm.controls['email'].errors">
+        Email is required.
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" required id="inputAddress" placeholder="1234 Main St" [(ngModel)]="address" formControlName="address">
+    <div *ngIf="requiredForm.controls['address'].invalid && (requiredForm.controls['address'].dirty || requiredForm.controls['address'].touched)" style="color: red">
+      <div *ngIf="requiredForm.controls['address'].errors">
+      Address is required.
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="inputContact">Contact</label>
+    <input type="text" class="form-control" required id="inputContact" placeholder="701234567" [(ngModel)]="contact" formControlName="contact">
+    <div *ngIf="requiredForm.controls['contact'].invalid && (requiredForm.controls['contact'].dirty || requiredForm.controls['contact'].touched)" style="color: red">
+      <div *ngIf="requiredForm.controls['contact'].errors">
+      Contact is required.
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="inputDOB">DOB</label>
+    <input type="date" class="form-control" required id="inputDOB" placeholder="Date Of Birth" [(ngModel)]="dob" formControlName="dob" useValueAsDate>
+    <div *ngIf="requiredForm.controls['dob'].invalid && (requiredForm.controls['dob'].dirty || requiredForm.controls['dob'].touched)" style="color: red">
+      <div *ngIf="requiredForm.controls['dob'].errors">
+      Date Of Birth is required.
+    </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword">Password</label>
+    <input type="password" class="form-control" required id="inputPassword" placeholder="Password" [(ngModel)]="password" formControlName="password">
+    <div *ngIf="requiredForm.controls['password'].invalid && (requiredForm.controls['password'].dirty || requiredForm.controls['password'].touched)" style="color: red">
+      <div *ngIf="requiredForm.controls['password'].errors">
+      Password is required.
+    </div>
+  </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary" [disabled]="requiredForm.invalid" >Sign Up</button>
+</form>
+</div>
