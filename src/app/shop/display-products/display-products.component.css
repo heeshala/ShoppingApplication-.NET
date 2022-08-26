@@ -1,0 +1,10 @@
+.card{
+    width: 28vw;
+    border: solid 1px black;
+}
+
+.serchField{
+     border: solid 1px #BABABA;
+     border-radius: 25px;
+     padding: 10px;
+}

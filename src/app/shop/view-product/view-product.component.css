@@ -1,3 +1,52 @@
 div.container {
-    min-height: calc(100vh - 140px);
+    min-height: calc(100vh - 180px);
 }
+
+button{
+    webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+            padding: 18px;
+            width: 100%;
+            margin-bottom:15px;
+            margin-top: 30px;
+            border: solid 1px white;
+  }
+
+  .btn-success{
+    background-color:#000000 ;
+    border: none;
+    border: solid 1px black;
+  }
+
+  .btn-success {
+    color: #fff;
+    font-size: 40px;
+    font-family: "Quicksand", sans-serif;
+    -webkit-transition: color 100ms linear;
+    -ms-transition: color 100ms linear;
+    transition: color 100ms linear;
+  }
+
+  
+  
+  .btn-success:hover  {
+    color: #242424;
+    background-color: white;
+    border: solid 1px black;
+  }
+
+
+  .customButton{
+    
+    webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+            padding-top: 18px;
+            padding-bottom: 18px;
+            margin-bottom:15px;
+            margin-top: 30px;
+            width: 150px;
+            margin: 1px solid black;
+            
+  }

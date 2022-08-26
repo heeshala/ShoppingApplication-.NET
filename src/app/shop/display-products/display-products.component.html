@@ -1,10 +1,12 @@
 
 
-<div class="container" style="margin-top: 2vh;font-family: Montserrat;">
+<div class="container" style="margin-top: 10vh;min-height: 87.5vh;">
+  <div class="row">
+   <div class="col-2">
   
-  <div class="dropdown" style="float: right;">
-    <span style="font-weight: bold;">View </span>
-    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+  <div class="dropdown" >
+    <span style="font-weight: bold;margin-right: 4px;">View </span>
+    <button class="btn  dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
       {{category}}
     </button>
     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -16,33 +18,55 @@
      
     </ul>
   </div>
+</div>
+<div class="col-10">
+  <div >
+
+    <input type="text" class="form-control serchField"  placeholder="Search..." (keyup)="searchChange($event)"  >
+   
+  </div>
+</div>
+</div>
   <br>
 
 
 
-    <div class="row">
-      <div class="col-md-4 mx-auto my-5 d-flex justify-content-center"  *ngFor="let dataItem of pageOfProducts">
-        <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="{{dataItem.Image}}" height="250px">
+    <div class="row" >
+      <div class="col-md-4  my-2 d-flex justify-content-center"   *ngFor="let dataItem of pageOfProducts">
+        <div class="card" style="width: 580px;cursor: pointer;border: solid 1px #BABABA;" (click)="viewItemDetails(dataItem.ProductId)">
+            <img class="card-img-top" src="{{dataItem.Image}}" style="border-bottom: solid 1px #BABABA;">
             <div class="card-body">
-              <h5 class="card-title">{{dataItem.ProductName}}</h5>
-              <p class="card-text">In Stock {{dataItem.Quantity}}</p>
+              <h5 class="card-title" style="font-size:22px;margin-top: 10px;">{{dataItem.ProductName}}</h5>
+              <p class="card-text" style="color: #BABABA;margin-top: 20px;">Price : <br> <span style="color: black;font-weight:600;font-size:26px;margin-top: 18px;">Rs. {{dataItem.Price |number}}</span></p>
               
-              <div *ngIf='dataItem.Quantity == 0'>
-                <p style="color: red;font-weight: bold;">Out Of Stock</p>
-              </div>
-              <div *ngIf='dataItem.Quantity > 0'>
-                <p style="color: green;font-weight: bold;">Available</p>
-              </div>
-              <p class="card-text">Rs.{{dataItem.Price |number}}</p>
+
+              
+              
+                <div *ngIf='dataItem.Quantity == 0'>
+                   <span style="color: red;font-weight: bold;"> Out Of Stock</span> 
+                </div>
+                <div *ngIf='dataItem.Quantity > 0'>
+                  <span style="color: green;font-weight: bold;"> Available</span>
+                  <span class="card-text" style="font-size: 16px;"> {{dataItem.Quantity}} </span>
+                </div>
+              
+              
+              
              
-             <br>
-              <button (click)="viewItemDetails(dataItem.ProductId)"  class="btn btn-primary" style="float: right;">View Product</button>
+             
+             
             </div>
           </div>
       </div>
       
     </div>
-    <jw-pagination [items]="AllProductList" (changePage)="onChangePage($event)"  [pageSize]="6"></jw-pagination>
+    <div style="margin-top: 20px;margin-left:40% ;">
+      <jw-pagination [items]="AllProductList" (changePage)="onChangePage($event)"  [pageSize]="6" ></jw-pagination>
+    </div>
+    
     <br>
+
+    <div *ngIf='AllProductList.length==0'>
+      <h1 style="text-align: center;">No Item Found</h1>
+    </div>
   </div>

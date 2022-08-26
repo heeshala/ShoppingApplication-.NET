@@ -1,11 +1,21 @@
-div{
-    padding-top: 2vh;
-}
+.form-control{
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+           padding: 18px;
+  }
 
-button{
-    margin-top: 2vh;
-}
+  button{
+    webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+            padding: 18px;
+            width: 100%;
+           
+            margin-top: 15px;
+  }
 
-div.container {
-    min-height: calc(100vh - 125px);
-}
+  .btn-success{
+    background-color:#3554D1 ;
+    border: none;
+  }

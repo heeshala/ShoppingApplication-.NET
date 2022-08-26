@@ -1,8 +1,8 @@
 
 <div *ngIf='role != "admin" '>
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #d6f7ff7e; font-family: Montserrat;" >
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #ffffff; font-family: Montserrat;position: fixed;top: 0;width: 100%;z-index: 1;border-bottom:solid  1px rgba(139, 139, 139, 0.596);" >
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" width="100" height="50" alt=""></a>
+    <a class="navbar-brand" href="#" style="font-weight: 600;margin-left:10px"><img src="../assets/images/logo.png" width="100" height="50" alt=""></a>
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -10,18 +10,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" style="cursor: pointer;"  (click)="shop()">Shop</a>
+          
+            <button class="btnNav" style="cursor: pointer;"  (click)="shop()">Shop</button>
+          
+          
         </li>
         <li class="nav-item" *ngIf='id != ""'>
-          <a class="nav-link active" style="cursor: pointer;" (click)="orders()">Past Orders</a>
+          <button class="btnNav" style="cursor: pointer;" (click)="orders()">Past Orders</button>
         </li>
        
         
       </ul>
       <div class="d-flex">
         <div *ngIf='id == ""'>
-          <button class="btn btn-outline-success"  routerLink="/registration"  style="margin-right:10px">Register</button>
-          <button class="btn btn-outline-primary"  routerLink="/login">Login</button>
+          <button class="btnLog"  routerLink="/login">Login</button>
+          <button class="btnReg"  routerLink="/registration"  style="margin-right:10px">Register</button>
+          
         </div>
 
         <div *ngIf='id != ""'>
@@ -29,8 +33,9 @@
           
           <span style="margin-right: 20px;"><a routerLink="/profile" style="text-decoration: none;" routerLink="/profile">{{CustomerName}}</a></span>
           <span  (click)="onCart()"  class="cart" style="color: black;cursor: pointer; font-size: 30px;">
-            <i class="fa-solid fa-bag-shopping"></i>
-           <sup style="color: red;"><b>{{ CartItems.length }}</b></sup>
+            <i class="fa-solid fa-cart-shopping" style="font-size: 25px;"></i>
+            
+           <sup style="color: white;background-color:red;margin-left:2px;font-size: 16px;padding-top: 4px;padding-bottom: 4px;padding-left: 7px;padding-right: 7px;border-radius: 100%;"><b>{{ CartItems.length }}</b></sup>
           </span>
        
         </div>
@@ -44,7 +49,7 @@
 
 <!--Admin navBar-->
 <div *ngIf='role == "admin" '>
-<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #d6f7ff7e; font-family: Montserrat;" >
+<nav class="navbar navbar-expand-lg navbar-light " style="background-color: #ffffff; font-family: Montserrat;position: fixed;top: 0;width: 100%;z-index: 1;" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#"><img src="../assets/images/logo.png" width="100" height="50" alt=""></a>
 
@@ -54,10 +59,10 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" style="cursor: pointer;"  (click)="shop()">Shop</a>
+          <button class="btnNav" style="cursor: pointer;"  (click)="shop()">Shop</button>
         </li>
         <li class="nav-item" >
-          <a class="nav-link active" style="cursor: pointer;" (click)="dashboard()">Dashboard</a>
+          <button class="btnNav" style="cursor: pointer;" (click)="dashboard()">Dashboard</button>
         </li>
        
         

@@ -31,6 +31,12 @@ export class ShoppingService {
     return this.http.get<any>(this.APIUrl+'/Shopping/GetByCategory/'+category);
   }
 
+
+  //Filter By Search
+  filterBySearch(search:any):Observable<any[]>{
+    return this.http.get<any>(this.APIUrl+'/Shopping/SearchProduct/'+search);
+  }
+
   //Get Product ById
   getProductById(id:any):Observable<any[]>{
     let HTTPOptions:Object = {

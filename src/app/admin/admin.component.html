@@ -1,32 +1,45 @@
-<div class="container" style="margin-top: 2vh;font-family: Montserrat;">
-    <h1 style="text-align: center;">Welcome To Administration</h1>
-    <br>
-    <div style="width:30vw;margin-left:30%;">
-        <form (ngSubmit)="login()" [formGroup]="requiredForm" novalidate >
-            <div class="form-group">
-              <label for="exampleInputEmail1">UserName</label>
-              <input type="text" class="form-control" id="exampleInputEmail1" [(ngModel)]="uname" formControlName="uname" aria-describedby="unameHelp" placeholder="Enter Username">
-              <div *ngIf="requiredForm.controls['uname'].invalid && (requiredForm.controls['uname'].dirty || requiredForm.controls['uname'].touched)" style="color: red">
-                <div *ngIf="requiredForm.controls['uname'].errors">
-                UserName is required.
-              </div>
+<div class="container-fluid" style="font-family: Montserrat;">
+  <div class="row" style="height: 97.5vh;">
+    <div class="col-6" style="background-image: url(../assets/images/background2.png);">
+     
+    </div>
+  
+  
+    <div class="col-6" style="display: flex;align-items: center;justify-content: left;">
+    
+      <div style="width:26vw;margin: auto;">
+        <p style="margin-bottom: 40px;font-weight:400;font-size: 40px;">Admin Login</p>
+      <form (ngSubmit)="login()" [formGroup]="requiredForm" novalidate >
+          <div class="form-group ">
+            <label for="exampleInputEmail1" style="font-weight: 500;margin-bottom: 10px;">Username</label>
+            <input type="text" class="form-control"  style="padding: 18px;" id="exampleInputEmail1" [(ngModel)]="uname" formControlName="uname" aria-describedby="unameHelp" placeholder="Enter Username">
+            <div *ngIf="requiredForm.controls['uname'].invalid && (requiredForm.controls['uname'].dirty || requiredForm.controls['uname'].touched)" style="color: red">
+              <div *ngIf="requiredForm.controls['uname'].errors">
+              UserName is required.
             </div>
-        </div>
-            <br>
-            <div class="form-group">
-              <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" required id="inputPassword" placeholder="Password" [(ngModel)]="password" formControlName="password">
-    <div *ngIf="requiredForm.controls['password'].invalid && (requiredForm.controls['password'].dirty || requiredForm.controls['password'].touched)" style="color: red">
-      <div *ngIf="requiredForm.controls['password'].errors">
-      Password is required.
-    </div>
+          </div>
+      </div>
+          <br>
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="font-weight: 500;margin-bottom: 10px;">Password</label>
+            <input type="password" class="form-control"  style="padding: 18px;" required id="inputPassword" placeholder="Password" [(ngModel)]="password" formControlName="password">
+  <div *ngIf="requiredForm.controls['password'].invalid && (requiredForm.controls['password'].dirty || requiredForm.controls['password'].touched)" style="color: red">
+    <div *ngIf="requiredForm.controls['password'].errors">
+    Password is required.
   </div>
-        </div>
-           <br>
-            <button type="submit" class="btn btn-success" [disabled]="requiredForm.invalid">Login</button>
-        </form>
-         
-    </div>
+</div>
+      </div>
+        
+          <button type="submit" class="btn btn-success" [disabled]="requiredForm.invalid">Login</button>
+      </form>
+       
+  </div>
+</div>
+</div>
+
+
+
+    
     
 </div>
 

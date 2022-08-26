@@ -1,4 +1,21 @@
 
-div.container {
-    min-height: calc(100vh - 140px);
-}
+.form-control{
+    -webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+  }
+
+  button{
+    webkit-border-radius: 12px;
+       -moz-border-radius: 12px;
+            border-radius: 12px;
+            padding: 18px;
+            width: 100%;
+            margin-bottom:15px;
+            margin-top: 30px;
+  }
+
+  .btn-success{
+    background-color:#3554D1 ;
+    border: none;
+  }

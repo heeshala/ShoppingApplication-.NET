@@ -21,6 +21,8 @@ requiredForm: FormGroup= this.fb.group({
   
 });
 
+
+
   productId:any;
   email:any;
   password:any;
@@ -30,6 +32,8 @@ requiredForm: FormGroup= this.fb.group({
     this.productId=history.state.data;
   }
  
+
+  
   resultStatus:any;
   async login(){
     console.log(this.email);

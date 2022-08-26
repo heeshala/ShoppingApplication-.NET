@@ -65,6 +65,23 @@ export class DisplayProductsComponent implements OnInit {
     });
   }
 
+  searchChange(event:any){
+    console.log(event.target.value);
+    if(event.target.value.length>0){
+      this.filterbySearch(event.target.value);
+    }
+    
+  }
+
+
+  filterbySearch(search:any){
+    this.category="All";
+    this.service.filterBySearch(search).subscribe(data=>{
+      this.AllProductList=data;
+      
+    });
+  }
+
   onChangePage(pageOfItems: Array<any>) {
     // update current page of products
     this.pageOfProducts = pageOfItems;
