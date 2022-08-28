@@ -1,0 +1,24 @@
+2022-08-25 10:23:53.453 +05:30 [Information] User profile is available. Using '"C:\Users\Heeshala\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-25 10:23:54.030 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2022-08-25 10:23:54.030 +05:30 [Information] Hosting environment: "Development"
+2022-08-25 10:23:54.031 +05:30 [Information] Content root path: "C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API"
+2022-08-25 10:23:54.081 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  
+2022-08-25 10:23:54.531 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-25 10:23:54.565 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Shopping_API.WeatherForecast] Get()" on controller "Shopping_API.Controllers.WeatherForecastController" ("Shopping API").
+2022-08-25 10:23:54.573 +05:30 [Information] Executing ObjectResult, writing value of type '"Shopping_API.WeatherForecast[]"'.
+2022-08-25 10:23:54.742 +05:30 [Information] Executed action "Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)" in 172.9303ms
+2022-08-25 10:23:54.743 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-25 10:23:54.745 +05:30 [Information] Request finished in 667.3665ms 200 application/json; charset=utf-8
+2022-08-25 10:23:54.818 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  
+2022-08-25 10:23:54.833 +05:30 [Information] Request finished in 15.0604ms 404 
+2022-08-25 11:49:13.289 +05:30 [Information] User profile is available. Using '"C:\Users\Heeshala\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-25 11:49:13.747 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2022-08-25 11:49:13.747 +05:30 [Information] Hosting environment: "Development"
+2022-08-25 11:49:13.747 +05:30 [Information] Content root path: "C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API"
+2022-08-25 11:49:13.789 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  
+2022-08-25 11:49:14.134 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-25 11:49:14.153 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Shopping_API.WeatherForecast] Get()" on controller "Shopping_API.Controllers.WeatherForecastController" ("Shopping API").
+2022-08-25 11:49:14.157 +05:30 [Information] Executing ObjectResult, writing value of type '"Shopping_API.WeatherForecast[]"'.
+2022-08-25 11:49:14.271 +05:30 [Information] Executed action "Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)" in 114.5627ms
+2022-08-25 11:49:14.272 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-25 11:49:14.274 +05:30 [Information] Request finished in 487.2883ms 200 application/json; charset=utf-8

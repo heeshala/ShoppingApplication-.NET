@@ -1,0 +1,18 @@
+2022-08-09 11:35:24.375 +05:30 [Information] User profile is available. Using '"C:\Users\Heeshala\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-09 11:35:24.650 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2022-08-09 11:35:24.654 +05:30 [Information] Hosting environment: "Development"
+2022-08-09 11:35:24.654 +05:30 [Information] Content root path: "C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API"
+2022-08-09 11:35:24.679 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  
+2022-08-09 11:35:24.772 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-09 11:35:24.798 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Shopping_API.WeatherForecast] Get()" on controller "Shopping_API.Controllers.WeatherForecastController" ("Shopping API").
+2022-08-09 11:35:24.804 +05:30 [Information] Executing ObjectResult, writing value of type '"Shopping_API.WeatherForecast[]"'.
+2022-08-09 11:35:24.926 +05:30 [Information] Executed action "Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)" in 121.9984ms
+2022-08-09 11:35:24.928 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-09 11:35:24.930 +05:30 [Information] Request finished in 253.1083ms 200 application/json; charset=utf-8
+2022-08-09 11:36:23.355 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/customer  
+2022-08-09 11:36:23.374 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CustomerController.Get (Shopping API)"'
+2022-08-09 11:36:23.386 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Customer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult Get()" on controller "Shopping_API.Controllers.CustomerController" ("Shopping API").
+2022-08-09 11:36:23.711 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-09 11:36:23.727 +05:30 [Information] Executed action "Shopping_API.Controllers.CustomerController.Get (Shopping API)" in 340.4785ms
+2022-08-09 11:36:23.728 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CustomerController.Get (Shopping API)"'
+2022-08-09 11:36:23.728 +05:30 [Information] Request finished in 372.7356ms 200 application/json; charset=utf-8

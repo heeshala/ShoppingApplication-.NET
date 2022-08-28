@@ -1,0 +1,230 @@
+2022-08-18 14:28:24.845 +05:30 [Information] User profile is available. Using '"C:\Users\Heeshala\AppData\Local\ASP.NET\DataProtection-Keys"' as key repository and Windows DPAPI to encrypt keys at rest.
+2022-08-18 14:28:26.232 +05:30 [Information] Application started. Press Ctrl+C to shut down.
+2022-08-18 14:28:26.233 +05:30 [Information] Hosting environment: "Development"
+2022-08-18 14:28:26.233 +05:30 [Information] Content root path: "C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API"
+2022-08-18 14:28:26.376 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/weatherforecast  
+2022-08-18 14:28:27.318 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-18 14:28:27.385 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"WeatherForecast\"}". Executing controller action with signature "System.Collections.Generic.IEnumerable`1[Shopping_API.WeatherForecast] Get()" on controller "Shopping_API.Controllers.WeatherForecastController" ("Shopping API").
+2022-08-18 14:28:27.407 +05:30 [Information] Executing ObjectResult, writing value of type '"Shopping_API.WeatherForecast[]"'.
+2022-08-18 14:28:27.792 +05:30 [Information] Executed action "Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)" in 398.4724ms
+2022-08-18 14:28:27.795 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.WeatherForecastController.Get (Shopping API)"'
+2022-08-18 14:28:27.800 +05:30 [Information] Request finished in 1433.8002ms 200 application/json; charset=utf-8
+2022-08-18 14:28:27.956 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/favicon.ico  
+2022-08-18 14:28:28.014 +05:30 [Information] Request finished in 57.701ms 404 
+2022-08-18 14:29:24.849 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping  
+2022-08-18 14:29:24.849 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetCategoryList  
+2022-08-18 14:29:24.854 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:24.854 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:24.865 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:29:24.865 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:29:24.867 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult Get()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:24.867 +05:30 [Information] Route matched with "{action = \"GetCategoryList\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCategoryList()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:25.237 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:25.237 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:25.252 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)" in 385.1404ms
+2022-08-18 14:29:25.252 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:29:25.253 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.Get (Shopping API)" in 385.655ms
+2022-08-18 14:29:25.253 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:29:25.253 +05:30 [Information] Request finished in 404.1122ms 200 application/json; charset=utf-8
+2022-08-18 14:29:25.253 +05:30 [Information] Request finished in 412.3362ms 200 application/json; charset=utf-8
+2022-08-18 14:29:42.624 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/Shopping/GetByProductId/16  
+2022-08-18 14:29:42.625 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:42.627 +05:30 [Information] Request finished in 3.4267ms 204 
+2022-08-18 14:29:42.635 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetByProductId/16 application/json 
+2022-08-18 14:29:42.635 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:42.638 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:42.649 +05:30 [Information] Route matched with "{action = \"GetByProductId\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetByProductId(Int32)" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:42.685 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:42.686 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)" in 36.8412ms
+2022-08-18 14:29:42.686 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:42.686 +05:30 [Information] Request finished in 50.8005ms 200 application/json; charset=utf-8
+2022-08-18 14:29:51.936 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/customer/CustomerLogin  
+2022-08-18 14:29:51.937 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:51.938 +05:30 [Information] Request finished in 1.5246ms 204 
+2022-08-18 14:29:51.942 +05:30 [Information] Request starting HTTP/2.0 POST https://localhost:44323/api/customer/CustomerLogin application/json 49
+2022-08-18 14:29:51.942 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:51.943 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CustomerController.CustomerLogin (Shopping API)"'
+2022-08-18 14:29:51.945 +05:30 [Information] Route matched with "{action = \"CustomerLogin\", controller = \"Customer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.IActionResult CustomerLogin(Shopping_API.Models.Customers)" on controller "Shopping_API.Controllers.CustomerController" ("Shopping API").
+2022-08-18 14:29:52.194 +05:30 [Information] Executing ObjectResult, writing value of type '"System.String"'.
+2022-08-18 14:29:52.196 +05:30 [Information] Executed action "Shopping_API.Controllers.CustomerController.CustomerLogin (Shopping API)" in 250.9437ms
+2022-08-18 14:29:52.197 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CustomerController.CustomerLogin (Shopping API)"'
+2022-08-18 14:29:52.197 +05:30 [Information] Request finished in 257.114ms 200 text/plain; charset=utf-8
+2022-08-18 14:29:52.201 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/customer/UserInformation  
+2022-08-18 14:29:52.201 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.201 +05:30 [Information] Request finished in 0.4494ms 204 
+2022-08-18 14:29:52.202 +05:30 [Information] Request starting HTTP/2.0 POST https://localhost:44323/api/customer/UserInformation application/json 49
+2022-08-18 14:29:52.202 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.251 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:29:52.255 +05:30 [Information] Authorization was successful.
+2022-08-18 14:29:52.256 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CustomerController.UserInformation (Shopping API)"'
+2022-08-18 14:29:52.257 +05:30 [Information] Route matched with "{action = \"UserInformation\", controller = \"Customer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult UserInformation(Shopping_API.Models.Customers)" on controller "Shopping_API.Controllers.CustomerController" ("Shopping API").
+2022-08-18 14:29:52.259 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:52.260 +05:30 [Information] Executed action "Shopping_API.Controllers.CustomerController.UserInformation (Shopping API)" in 2.6453ms
+2022-08-18 14:29:52.260 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CustomerController.UserInformation (Shopping API)"'
+2022-08-18 14:29:52.260 +05:30 [Information] Request finished in 57.2531ms 200 application/json; charset=utf-8
+2022-08-18 14:29:52.273 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/Shopping/GetByProductId/16  
+2022-08-18 14:29:52.273 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.273 +05:30 [Information] Request finished in 0.4061ms 204 
+2022-08-18 14:29:52.275 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetByProductId/16 application/json 
+2022-08-18 14:29:52.275 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.276 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:52.276 +05:30 [Information] Route matched with "{action = \"GetByProductId\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetByProductId(Int32)" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:52.278 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:52.280 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)" in 3.8254ms
+2022-08-18 14:29:52.280 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:52.280 +05:30 [Information] Request finished in 4.8209ms 200 application/json; charset=utf-8
+2022-08-18 14:29:52.416 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/cart/GetCartItems/1  
+2022-08-18 14:29:52.416 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.416 +05:30 [Information] Request finished in 0.77ms 204 
+2022-08-18 14:29:52.419 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/cart/GetCartItems/1 application/json 
+2022-08-18 14:29:52.419 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.420 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:29:52.421 +05:30 [Information] Authorization was successful.
+2022-08-18 14:29:52.421 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:29:52.423 +05:30 [Information] Route matched with "{action = \"GetCartItems\", controller = \"Cart\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCartItems(Int32)" on controller "Shopping_API.Controllers.CartController" ("Shopping API").
+2022-08-18 14:29:52.424 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetByProductId/16 application/json 
+2022-08-18 14:29:52.424 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:52.424 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:52.424 +05:30 [Information] Route matched with "{action = \"GetByProductId\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetByProductId(Int32)" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:52.428 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:52.429 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:52.429 +05:30 [Information] Executed action "Shopping_API.Controllers.CartController.GetCartItems (Shopping API)" in 6.3477ms
+2022-08-18 14:29:52.429 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)" in 5.2484ms
+2022-08-18 14:29:52.429 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:29:52.429 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:52.429 +05:30 [Information] Request finished in 10.7752ms 200 application/json; charset=utf-8
+2022-08-18 14:29:52.429 +05:30 [Information] Request finished in 5.8403ms 200 application/json; charset=utf-8
+2022-08-18 14:29:56.530 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/cart/CheckItemDuplication  
+2022-08-18 14:29:56.530 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:56.531 +05:30 [Information] Request finished in 0.9338ms 204 
+2022-08-18 14:29:56.535 +05:30 [Information] Request starting HTTP/2.0 POST https://localhost:44323/api/cart/CheckItemDuplication application/json 35
+2022-08-18 14:29:56.535 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:56.538 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:29:56.538 +05:30 [Information] Authorization was successful.
+2022-08-18 14:29:56.538 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CartController.CheckItemDuplication (Shopping API)"'
+2022-08-18 14:29:56.541 +05:30 [Information] Route matched with "{action = \"CheckItemDuplication\", controller = \"Cart\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult CheckItemDuplication(Shopping_API.Models.Items)" on controller "Shopping_API.Controllers.CartController" ("Shopping API").
+2022-08-18 14:29:56.550 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:56.550 +05:30 [Information] Executed action "Shopping_API.Controllers.CartController.CheckItemDuplication (Shopping API)" in 9.3853ms
+2022-08-18 14:29:56.551 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CartController.CheckItemDuplication (Shopping API)"'
+2022-08-18 14:29:56.551 +05:30 [Information] Request finished in 18.3729ms 200 application/json; charset=utf-8
+2022-08-18 14:29:56.555 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/cart/AddCartItems  
+2022-08-18 14:29:56.555 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:56.556 +05:30 [Information] Request finished in 0.3062ms 204 
+2022-08-18 14:29:56.556 +05:30 [Information] Request starting HTTP/2.0 POST https://localhost:44323/api/cart/AddCartItems application/json 63
+2022-08-18 14:29:56.556 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:56.557 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:29:56.557 +05:30 [Information] Authorization was successful.
+2022-08-18 14:29:56.557 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CartController.AddCartItems (Shopping API)"'
+2022-08-18 14:29:56.558 +05:30 [Information] Route matched with "{action = \"AddCartItems\", controller = \"Cart\"}". Executing controller action with signature "Int32 AddCartItems(Shopping_API.Models.Items)" on controller "Shopping_API.Controllers.CartController" ("Shopping API").
+2022-08-18 14:29:56.573 +05:30 [Information] Executing ObjectResult, writing value of type '"System.Int32"'.
+2022-08-18 14:29:56.574 +05:30 [Information] Executed action "Shopping_API.Controllers.CartController.AddCartItems (Shopping API)" in 15.2025ms
+2022-08-18 14:29:56.574 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CartController.AddCartItems (Shopping API)"'
+2022-08-18 14:29:56.574 +05:30 [Information] Request finished in 17.35ms 200 application/json; charset=utf-8
+2022-08-18 14:29:58.094 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping  
+2022-08-18 14:29:58.094 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetCategoryList  
+2022-08-18 14:29:58.094 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:58.094 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:58.095 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:29:58.095 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:29:58.096 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult Get()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:58.096 +05:30 [Information] Route matched with "{action = \"GetCategoryList\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCategoryList()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:58.100 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:58.100 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:58.103 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)" in 7.1196ms
+2022-08-18 14:29:58.103 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.Get (Shopping API)" in 7.6891ms
+2022-08-18 14:29:58.103 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:29:58.103 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:29:58.104 +05:30 [Information] Request finished in 9.866ms 200 application/json; charset=utf-8
+2022-08-18 14:29:58.104 +05:30 [Information] Request finished in 9.9198ms 200 application/json; charset=utf-8
+2022-08-18 14:29:58.285 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/cart/GetCartItems/1  
+2022-08-18 14:29:58.286 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:58.286 +05:30 [Information] Request finished in 0.3892ms 204 
+2022-08-18 14:29:58.287 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/cart/GetCartItems/1 application/json 
+2022-08-18 14:29:58.287 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:58.288 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:29:58.288 +05:30 [Information] Authorization was successful.
+2022-08-18 14:29:58.288 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:29:58.288 +05:30 [Information] Route matched with "{action = \"GetCartItems\", controller = \"Cart\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCartItems(Int32)" on controller "Shopping_API.Controllers.CartController" ("Shopping API").
+2022-08-18 14:29:58.290 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:58.290 +05:30 [Information] Executed action "Shopping_API.Controllers.CartController.GetCartItems (Shopping API)" in 1.7546ms
+2022-08-18 14:29:58.290 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:29:58.290 +05:30 [Information] Request finished in 3.3331ms 200 application/json; charset=utf-8
+2022-08-18 14:29:58.292 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/Shopping/GetByProductId/16  
+2022-08-18 14:29:58.292 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:58.293 +05:30 [Information] Request finished in 0.3179ms 204 
+2022-08-18 14:29:58.294 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetByProductId/16 application/json 
+2022-08-18 14:29:58.294 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:29:58.294 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:58.295 +05:30 [Information] Route matched with "{action = \"GetByProductId\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetByProductId(Int32)" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:29:58.295 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:29:58.296 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)" in 1.07ms
+2022-08-18 14:29:58.296 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetByProductId (Shopping API)"'
+2022-08-18 14:29:58.296 +05:30 [Information] Request finished in 1.4949ms 200 application/json; charset=utf-8
+2022-08-18 14:30:14.045 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/cart/GetCartItems/1  
+2022-08-18 14:30:14.045 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:14.046 +05:30 [Information] Request finished in 1.0206ms 204 
+2022-08-18 14:30:14.047 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/cart/GetCartItems/1 application/json 
+2022-08-18 14:30:14.048 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:14.049 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:30:14.050 +05:30 [Information] Authorization was successful.
+2022-08-18 14:30:14.050 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:30:14.050 +05:30 [Information] Route matched with "{action = \"GetCartItems\", controller = \"Cart\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCartItems(Int32)" on controller "Shopping_API.Controllers.CartController" ("Shopping API").
+2022-08-18 14:30:14.054 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:14.055 +05:30 [Information] Executed action "Shopping_API.Controllers.CartController.GetCartItems (Shopping API)" in 4.8753ms
+2022-08-18 14:30:14.055 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:30:14.055 +05:30 [Information] Request finished in 7.8669ms 200 application/json; charset=utf-8
+2022-08-18 14:30:16.606 +05:30 [Information] Request starting HTTP/2.0 OPTIONS https://localhost:44323/api/customer/CustomerInformation/1  
+2022-08-18 14:30:16.607 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:16.607 +05:30 [Information] Request finished in 0.9877ms 204 
+2022-08-18 14:30:16.611 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/customer/CustomerInformation/1 application/json 
+2022-08-18 14:30:16.611 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:16.612 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:30:16.614 +05:30 [Information] Authorization was successful.
+2022-08-18 14:30:16.614 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CustomerController.CustomerInformation (Shopping API)"'
+2022-08-18 14:30:16.617 +05:30 [Information] Route matched with "{action = \"CustomerInformation\", controller = \"Customer\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult CustomerInformation(Int32)" on controller "Shopping_API.Controllers.CustomerController" ("Shopping API").
+2022-08-18 14:30:16.622 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:16.624 +05:30 [Information] Executed action "Shopping_API.Controllers.CustomerController.CustomerInformation (Shopping API)" in 6.1612ms
+2022-08-18 14:30:16.624 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CustomerController.CustomerInformation (Shopping API)"'
+2022-08-18 14:30:16.624 +05:30 [Information] Request finished in 13.6352ms 200 application/json; charset=utf-8
+2022-08-18 14:30:18.894 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping  
+2022-08-18 14:30:18.894 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:18.895 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:30:18.895 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetCategoryList  
+2022-08-18 14:30:18.895 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:18.895 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult Get()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:30:18.895 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:30:18.896 +05:30 [Information] Route matched with "{action = \"GetCategoryList\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCategoryList()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:30:18.902 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:18.902 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:18.903 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)" in 7.6478ms
+2022-08-18 14:30:18.904 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:30:18.904 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.Get (Shopping API)" in 8.7233ms
+2022-08-18 14:30:18.904 +05:30 [Information] Request finished in 8.895ms 200 application/json; charset=utf-8
+2022-08-18 14:30:18.904 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:30:18.904 +05:30 [Information] Request finished in 10.3873ms 200 application/json; charset=utf-8
+2022-08-18 14:30:19.041 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/cart/GetCartItems/1 application/json 
+2022-08-18 14:30:19.041 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:19.042 +05:30 [Information] Successfully validated the token.
+2022-08-18 14:30:19.043 +05:30 [Information] Authorization was successful.
+2022-08-18 14:30:19.043 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:30:19.043 +05:30 [Information] Route matched with "{action = \"GetCartItems\", controller = \"Cart\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCartItems(Int32)" on controller "Shopping_API.Controllers.CartController" ("Shopping API").
+2022-08-18 14:30:19.046 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping  
+2022-08-18 14:30:19.046 +05:30 [Information] Request starting HTTP/2.0 GET https://localhost:44323/api/Shopping/GetCategoryList  
+2022-08-18 14:30:19.046 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:19.046 +05:30 [Information] CORS policy execution successful.
+2022-08-18 14:30:19.046 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:30:19.046 +05:30 [Information] Executing endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:30:19.046 +05:30 [Information] Route matched with "{action = \"Get\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult Get()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:30:19.046 +05:30 [Information] Route matched with "{action = \"GetCategoryList\", controller = \"Shopping\"}". Executing controller action with signature "Microsoft.AspNetCore.Mvc.JsonResult GetCategoryList()" on controller "Shopping_API.Controllers.ShoppingController" ("Shopping API").
+2022-08-18 14:30:19.048 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:19.048 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:19.048 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)" in 2.0337ms
+2022-08-18 14:30:19.048 +05:30 [Information] Executed action "Shopping_API.Controllers.CartController.GetCartItems (Shopping API)" in 5.1526ms
+2022-08-18 14:30:19.049 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.GetCategoryList (Shopping API)"'
+2022-08-18 14:30:19.049 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.CartController.GetCartItems (Shopping API)"'
+2022-08-18 14:30:19.049 +05:30 [Information] Request finished in 3.0734ms 200 application/json; charset=utf-8
+2022-08-18 14:30:19.049 +05:30 [Information] Request finished in 7.5787ms 200 application/json; charset=utf-8
+2022-08-18 14:30:19.053 +05:30 [Information] Executing JsonResult, writing value of type '"System.Data.DataTable"'.
+2022-08-18 14:30:19.054 +05:30 [Information] Executed action "Shopping_API.Controllers.ShoppingController.Get (Shopping API)" in 8.1201ms
+2022-08-18 14:30:19.055 +05:30 [Information] Executed endpoint '"Shopping_API.Controllers.ShoppingController.Get (Shopping API)"'
+2022-08-18 14:30:19.055 +05:30 [Information] Request finished in 9.1283ms 200 application/json; charset=utf-8

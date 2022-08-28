@@ -1,0 +1,62 @@
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Shopping API.exe
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Shopping API.deps.json
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Shopping API.runtimeconfig.json
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Shopping API.runtimeconfig.dev.json
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Shopping API.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Shopping API.pdb
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.csprojAssemblyReference.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.AssemblyInfoInputs.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.AssemblyInfo.cs
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.csproj.CoreCompileInputs.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.MvcApplicationPartsAssemblyInfo.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\staticwebassets\Shopping API.StaticWebAssets.Manifest.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\staticwebassets\Shopping API.StaticWebAssets.xml
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\scopedcss\bundle\Shopping API.styles.css
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.RazorTargetAssemblyInfo.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.csproj.CopyComplete
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.pdb
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\obj\Debug\netcoreapp3.1\Shopping API.genruntimeconfig.cache
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Owin.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Owin.Security.OAuth.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\GlobalPayments.Api.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Abstractions.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyModel.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.AspNetCore.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Extensions.Hosting.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Extensions.Logging.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Formatting.Compact.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Settings.Configuration.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Sinks.Console.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Sinks.Debug.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Sinks.File.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\Serilog.Sinks.RollingFile.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\E\Virtusa\Assignment\Middleware\Shopping API\Shopping API\bin\Debug\netcoreapp3.1\System.Runtime.CompilerServices.Unsafe.dll
