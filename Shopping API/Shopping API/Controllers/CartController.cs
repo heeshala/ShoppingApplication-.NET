@@ -512,7 +512,7 @@ card.setCvn("131");
 
                 
                     MailMessage MailMessage = new MailMessage();
-                    MailMessage.From = new MailAddress("admin@smarttraveller.lk");
+                    MailMessage.From = new MailAddress("senderemailaddress");
                     MailMessage.To.Add(invoice[0].Email);
                     MailMessage.Subject = "ShopperLK Order Recipt";
                     MailMessage.Body = emailBody;
@@ -522,7 +522,7 @@ card.setCvn("131");
                     SmtpClient.Host = "smtp.zoho.com";
                     SmtpClient.Port = 587;
                     SmtpClient.UseDefaultCredentials = false;
-                    SmtpClient.Credentials = new System.Net.NetworkCredential("admin@smarttraveller.lk", "Hesh@9726");
+                    SmtpClient.Credentials = new System.Net.NetworkCredential("senderemailaddress", "password");
                     SmtpClient.Send(MailMessage);
                 }
                 catch (Exception ex)
