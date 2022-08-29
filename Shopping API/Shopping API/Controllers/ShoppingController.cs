@@ -237,8 +237,8 @@ namespace Shopping_API.Controllers
             try
             {
                 MailMessage MailMessage = new MailMessage();
-                MailMessage.From = new MailAddress("admin@smarttraveller.lk");
-                MailMessage.To.Add("heeshala25@gmail.com");
+                MailMessage.From = new MailAddress("sendingemailaddress");
+                MailMessage.To.Add("recepientaddress");
                 MailMessage.Subject = "ShopperLK Order Recipt";
                 MailMessage.Body = emailBody;
                 MailMessage.IsBodyHtml = true;
@@ -247,7 +247,7 @@ namespace Shopping_API.Controllers
                 SmtpClient.Host = "smtp.zoho.com";
                 SmtpClient.Port = 587;
                 SmtpClient.UseDefaultCredentials = false;
-                SmtpClient.Credentials = new System.Net.NetworkCredential("admin@smarttraveller.lk", "Hesh@9726");
+                SmtpClient.Credentials = new System.Net.NetworkCredential("sendingaddress", "password");
                 SmtpClient.Send(MailMessage);
             }
             
